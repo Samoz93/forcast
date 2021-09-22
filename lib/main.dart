@@ -1,4 +1,3 @@
-import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_video_cast/flutter_video_cast.dart';
 import 'package:video_player/video_player.dart';
@@ -37,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
       "https://player.vimeo.com/external/605412753.m3u8?s=b6e3a93a339e449ad7723e4458a54ddeebd309f9";
 
   late VideoPlayerController _vidCtrl;
-  late ChewieController chewieController;
 
   @override
   void initState() {
@@ -222,7 +220,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void dispose() {
     _vidCtrl.dispose();
-    chewieController.dispose();
 
     super.dispose();
   }
